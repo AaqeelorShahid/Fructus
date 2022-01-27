@@ -30,6 +30,8 @@ struct FruitDetailView: View {
                             .multilineTextAlignment(.leading)
                         
                         //Nutri
+                        FruitNutrientsView(fruit: fruit)
+                        
                         
                         //Subheadline
                         
