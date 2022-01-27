@@ -13,15 +13,10 @@ struct SettingsLabelView: View {
     var image: String
     
     var body: some View {
-        GroupBox (label:
-                    HStack {
+        HStack {
             Text(title.uppercased())
             Spacer()
             Image(systemName: image)
-        }) {
-            HStack {
-                Text("Something Something")
-            }
         }
     }
 }

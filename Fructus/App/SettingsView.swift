@@ -10,6 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     
     @Environment(\.presentationMode) var presentationMode
+    @AppStorage("isOnBoarding") var isOnBoarding:Bool = false
     
     var body: some View {
         NavigationView {
@@ -34,6 +35,44 @@ struct SettingsView: View {
                                 .font(.footnote)
                         }
                     }
+                    
+                    GroupBox (label: SettingsLabelView(title: "Cutomization", image: "paintbrush")) {
+                        Divider().padding(.vertical, 4)
+                        
+                        Text("If you wish you can restart the application by toggling the below button. It'll start the application from the Onboarding screen")
+                            .font(.footnote)
+                            .layoutPriority(1)
+                            .frame(minHeight: 80 )
+                            .multilineTextAlignment(.leading)
+                        
+                        Toggle(isOn: $isOnBoarding) {
+                            if isOnBoarding {
+                                Text("Restarted".uppercased())
+                                    .foregroundColor(.green)
+                                    .fontWeight(.semibold )
+                                    
+                                    
+                            } else {
+                                Text("Restart".uppercased())
+                            }
+                        }
+                        .padding()
+                        .background(Color(UIColor.tertiarySystemBackground))
+                        .cornerRadius(10)
+                    }
+                    
+                    GroupBox(label: SettingsLabelView(title: "Application", image: "apps.iphone")) {
+                        
+                        Divider().padding(.vertical, 4)
+                        
+                        SettingsRowView(title: "Name", name: "Shahid Aaqeel")
+                        SettingsRowView(title: "Designation", name: "Mobile Developer")
+                        SettingsRowView(title: "Nationality", name: "Sri Lankan")
+                        SettingsRowView(title: "Portfolio", linkLabel: "Own", linkDestination: "google.com")
+                        SettingsRowView(title: "Github", linkLabel: "Github", linkDestination: "github.com")
+                        SettingsRowView(title: "Current Employee", name: "Dialog Axiata")
+                    }
+                    
                 }
             }
             .navigationTitle("Settings")

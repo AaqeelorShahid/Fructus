@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F70B734A27A2F65B00824860 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B734927A2F65A00824860 /* SettingsRowView.swift */; };
 		F73E3BE427A0445E00BDA3E1 /* FructusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E3BE327A0445E00BDA3E1 /* FructusApp.swift */; };
 		F73E3BE627A0445E00BDA3E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E3BE527A0445E00BDA3E1 /* ContentView.swift */; };
 		F73E3BE827A0445E00BDA3E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73E3BE727A0445E00BDA3E1 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F70B734927A2F65A00824860 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		F73E3BE027A0445E00BDA3E1 /* Fructus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fructus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73E3BE327A0445E00BDA3E1 /* FructusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FructusApp.swift; sourceTree = "<group>"; };
 		F73E3BE527A0445E00BDA3E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				F75C737827A1E0E5008A3E0F /* SourceLinkView.swift */,
 				F74D87AD27A2BCD800AA6987 /* FruitNutrientsView.swift */,
 				F74D87B327A2CF3E00AA6987 /* SettingsLabelView.swift */,
+				F70B734927A2F65A00824860 /* SettingsRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				F75C737127A19D49008A3E0F /* FruitData.swift in Sources */,
 				F75C737927A1E0E5008A3E0F /* SourceLinkView.swift in Sources */,
+				F70B734A27A2F65B00824860 /* SettingsRowView.swift in Sources */,
 				F73E3BF427A0807D00BDA3E1 /* FruitCardView.swift in Sources */,
 				F75C737327A1C28B008A3E0F /* FruitRowView.swift in Sources */,
 				F74D87AE27A2BCD800AA6987 /* FruitNutrientsView.swift in Sources */,
